@@ -1,0 +1,278 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.background {
+    width: 100%;
+    height: 100vh; 
+    background-image: linear-gradient(to bottom right, rgba(243, 210, 39, 0.8), rgba(255, 140, 0, 0.8));    background-size: cover; 
+    background-position: center; 
+}
+
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.logo img {
+    width: 200px; 
+}
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    margin-top: 20px;
+    background-image: url('/images/original-truck.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 51%; 
+    height: 100%; 
+    color: #fff;
+    background: #313131;
+    padding: 80px;
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.item h1 {
+    font-size: 73px;
+    margin: 0px 10px 40px 10px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.item span {
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.item p {
+    font-size: 20px !important;
+    line-height: 1;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+
+
+.container .login-section {
+    position: absolute;
+    top: 0;
+    left: 59%; 
+    width: calc(100% - 58%);
+    height: 100%;
+    color: #fff;
+    transform: translateX(-10%); 
+}
+
+.login-section .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.container .register-section {
+    position: absolute;
+    top: 0;
+    left: 59%; 
+    width: calc(100% - 58%);
+    height: 100%;
+    color: #fff;
+    transform: translateX(-10%); 
+}
+
+.register-section .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.background-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93%;
+    height: 85%;
+    margin-top: 40px;
+    margin-left: 15px;
+    border-radius: 20px;
+    background: rgba(49, 49, 49, 0.8);
+}
+
+
+
+.login-section .form-box h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+.register-section .form-box h2{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 70px;
+
+}
+
+
+.form-box .input-box {
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #fff;;
+    margin: 30px 0;
+    position: relative;
+    
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 600px;
+    pointer-events: none;
+    transition: .5s ease;
+
+}
+
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+
+.input-box input:focus~label,
+.input-box input:focus~label{
+    top: -5px;
+}
+
+.remember-password{
+    font-size: 14px;
+    font-weight: 500;
+    margin: -15px 0 30px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.terms-conditions{
+    font-size: 14px;
+    font-weight: 500;
+    margin: -16px 0 15px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.terms-conditions label input{
+    accent-color: #fff;
+    margin-right: 3px;
+   
+}
+
+
+.remember-password label input{
+    accent-color: #fff;
+    margin: 3px;
+    
+}
+
+.remember-password input[type="checkbox"] {
+    position: relative;
+    top: 2px; 
+}
+
+
+.terms-conditions input[type="checkbox"] {
+    position: relative;
+    top: 3px; 
+}
+
+.btn {
+    background: #fff;
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, rgba(243, 210, 39, 0.8), rgba(255, 140, 0, 0.8));
+    box-shadow: rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Adding transitions */
+}
+
+.btn:hover {
+    background-color: #ffcc00; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); 
+    transform: scale(1.05); 
+}
+
+
+.create-account{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 25px;
+}
+
+
+.create-account p a {
+    color: #fff;
+    font-weight: 600px;
+    text-decoration: none;
+
+}
+
+.register-section .create-account{
+    font-size: 14.5px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.create-account p a:hover{
+    text-decoration: underline;
+}
